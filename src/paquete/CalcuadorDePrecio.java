@@ -11,6 +11,6 @@ public class CalcuadorDePrecio {
 	}
 */
 	public Double calcularPrecio(Cliente cliente,Double precioBase){
-		return precioBase*cliente.getIndice(precioBase);
+		return precioBase*cliente.getIndice(precioBase)+cliente.getComision();
 	}
 }

@@ -8,13 +8,13 @@ public class Prueva {
 		CalcuadorDePrecio calcuadorDePrecio=new CalcuadorDePrecio();
 		
 		//EMPLEAD0O
-		EmpleadoDeDespegar empleado=new EmpleadoDeDespegar("Milton Ajhuacho",2.1);
+		EmpleadoDeDespegar empleado=new EmpleadoDeDespegar("Milton Ajhuacho");
 		Double precioDePasajeParaEmpleado=calcuadorDePrecio.calcularPrecio(empleado, precioBase);
 		System.out.println("Nombre del empleado : "+empleado.getNombre());
 		System.out.println("Precio del empleado : "+precioDePasajeParaEmpleado);
 		
 		//PASAJERO
-		Pasajero pasajero=new Pasajero("Jhonny Beredja",2.3,1.2);
+		Pasajero pasajero=new Pasajero("Jhonny Beredja",2.3);
 		Double precioDePasajeParaPasajero=calcuadorDePrecio.calcularPrecio(pasajero,precioBase);
 		System.out.println("Nombre del pasajero : "+pasajero.getNombre());
 		System.out.println("Precio del pasajero : "+precioDePasajeParaPasajero);

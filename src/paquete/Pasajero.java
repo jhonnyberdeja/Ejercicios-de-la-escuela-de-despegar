@@ -3,12 +3,11 @@ package paquete;
 public class Pasajero implements Cliente {
 	private String nombre;
 	private Double indice;
-	private Double comision;
+	private static Double Comision=10.0;
 	
-	public Pasajero(String nombreCompleto,Double indice,Double comision){
+	public Pasajero(String nombreCompleto,Double indice){
 		this.nombre=nombreCompleto;
 		this.indice=indice;
-		this.comision=comision;
 	}
 	
 	public void setNombre(String nombreCompleto){
@@ -19,12 +18,12 @@ public class Pasajero implements Cliente {
 		return this.nombre;
 	}
 	
-	public void setComision(Double comision){
-		this.comision=comision;
+	public static void setComision(Double comision){
+		Comision=comision;
 	}
 	
 	public Double getComision(){
-		return this.comision;
+		return Comision;
 	}
 	
 	@Override
