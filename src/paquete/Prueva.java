@@ -3,7 +3,7 @@ package paquete;
 public class Prueva {
 
 	public static void main(String[] args) {
-		Double precioBase=1000.0;
+		Double precioBase=100.0;
 		
 		CalcuadorDePrecio calcuadorDePrecio=new CalcuadorDePrecio();
 		

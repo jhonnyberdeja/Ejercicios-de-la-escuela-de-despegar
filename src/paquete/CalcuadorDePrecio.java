@@ -1,16 +1,13 @@
 package paquete;
 
 public class CalcuadorDePrecio {
-/*	
-	public Double calcularPrecio(EmpleadoDeDespegar empleado,Double precioBase){
-		return precioBase*empleado.getIndice(precioBase);
-	}
-	
-	public Double calcularPrecio(Pasajero pasajero,Double precioBase){
-		return precioBase*pasajero.getIndice(precioBase)+pasajero.getComision();
-	}
-*/
+
+	private static Double Iva=21.0;
 	public Double calcularPrecio(Cliente cliente,Double precioBase){
-		return precioBase*cliente.getIndice(precioBase)+cliente.getComision();
+		//return (precioBase*cliente.getIndice(precioBase)+cliente.getComision())*Iva;
+		
+		Double impuestoIva=(precioBase*cliente.getIndice(precioBase)+cliente.getComision())*100/Iva;
+		
+		return  (precioBase*cliente.getIndice(precioBase)+cliente.getComision())+impuestoIva;
 	}
 }
