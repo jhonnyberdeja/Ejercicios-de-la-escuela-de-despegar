@@ -1,6 +1,6 @@
 package paquete;
 
-public class Cliente {
+public abstract class Cliente {
 	private String nombre;
 	
 	public void setNombre(String nombreCompleto){
